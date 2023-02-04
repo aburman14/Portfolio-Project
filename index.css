@@ -12,17 +12,25 @@
 }
 :root{
     /* --primary:#461b6c; */
-    --dark-mode-primary:#2f1c42;
-    --icon-color:#A143EA;
+    /* --dark-mode-primary:#2f1c42; */
+    --dark-mode-primary: #1e1c42;
+    /* --icon-color:#eeeeee; */
+    --icon-color:#43b3ea;
     /* --icon-color-dark:rgb(127 19 228); */
-    --dark-text-color:#fefefe;
+    /* --dark-text-color:#fefefe; */
+    --dark-text-color:#3b6cd9;
     --light-mode-primary:aliceblue;
     --light-text-color:rgb(84, 16, 111);
-    --input-color-dark:#3e0c64;
+    /* --input-color-dark:#3e0c64; */
+    --input-color-dark:rgb(47 47 154);
     --input-color-light:#dad6de;
     --input-text-color-light:#565151;
     --input-text-color-dark:aliceblue;
     --skills-dark:#2f1c42;
+    /* --project-content-light:#3e0c64; */
+    --project-content-light:#191247;
+    /* --project-content-dark:#3e0c64; */
+    --description:#eeeeee;
 }
 
 body{
@@ -36,7 +44,8 @@ li{
 
 
 p{
-    color:var(--dark-text-color)
+    color:var(--dark-text-color);
+    font-size: 20px;
 }
 .container{
     width:100vw;
@@ -190,7 +199,7 @@ p{
     padding: 5px 5px 5px 5px;
     width: 150px;
     border-radius: 9px;
-    background-color: #A143EA;
+    background-color:#3b6cd9;
     margin-left:0px;
     margin-top:50px;
     border:none;
@@ -285,7 +294,8 @@ display: flex;
     flex-direction: column-reverse;
     /* justify-content: space-between; */
    display: flex;
-    padding: 1.2rem 1.5rem 1.6rem  
+    padding: 1.2rem 1.5rem 1.6rem  ;
+    align-items: center;
 }
 
 
@@ -447,6 +457,15 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+@media screen and (min-width: 480px ){
+    .skill-display{
+        width: 400px;
+    }
 }
 
 
@@ -551,9 +570,12 @@ display: flex;
     /* justify-content: space-around; */
     align-items: left;
     margin-right:10%;
-    background: rgb(238 238 238);
+    background: var(--project-content-light);
     border-radius:15px;
-    box-shadow: 0px 4px 4px rgba(206, 147, 245, 0.699)
+    /* box-shadow: 0px 4px 4px rgba(206, 147, 245, 0.699) */
+    /* background:#3e0c64; */
+    /* box-shadow: 0px 4px 4px rgb(74 7 117 / 70%);
+    box-shadow: 0px 4px 4px rgb(235 213 249 / 70%); */
 }
 
 /* @media screen and (max-width: 859px){
@@ -564,8 +586,8 @@ display: flex;
 
 
 
-.project-name{
-    color:#6f01c3;
+.project-name,a{
+    color:var(--description);
     text-align: center;
     font-size: 19px;
     padding-top: 10px;
@@ -574,7 +596,7 @@ display: flex;
     .description{
         font-size: 13px;
         text-align: justify;
-        color: grey;
+        color: var(--description);
         padding-left:8px;
         padding-right:8px;
         padding-top:15px;
@@ -605,7 +627,8 @@ display: flex;
         /* background-color: inherit; */
         /* color:var(--text-color); */
         border-radius: 0px 0px 15px 15px;
-        box-shadow: 0px 4px 4px rgb(76 44 108 / 70%);
+        /* box-shadow: 0px 4px 4px rgb(76 44 108 / 70%); */
+        box-shadow: 0px 4px 4px rgb(32 37 84 / 70%);
         
 }
 
@@ -625,7 +648,8 @@ display: flex;
         /* background-color: rgb(126, 11, 221); */
         color:var(--dark-text-color);
         border-radius: 0px;
-        box-shadow: 0px 4px 4px  rgb(76 44 108 / 70%);
+        /* box-shadow: 0px 4px 4px  rgb(76 44 108 / 70%); */
+        box-shadow: 0px 4px 4px rgb(32 37 84 / 70%);
         
 
     } 
@@ -660,6 +684,9 @@ display: flex;
     text-decoration: none;
     padding-left:20px;
     border:none;
+    /* color: #3b6cd9; */
+    -webkit-text-stroke-width: medium;
+    letter-spacing: 2px;
     /* background-color: red; */
     
 }
@@ -803,12 +830,13 @@ display: flex;
 .menu-option1{
     width: 30px;
     height: 30px;
-    fill:#A143EA;
+    /* fill:#A143EA; */
+    fill:#43b3ea;
 }
 
 
 .footer{
-    background-color: rgb(111, 47, 154);
+    background-color:rgb(47 47 154);
     height:150px;
 }
 
@@ -871,8 +899,16 @@ textarea{
     } */
 
 .blob{
-    fill:#A143EA;
+    fill:#4367ea;
     width: 19rem;
+}
+
+.text-col{
+    color:#009688;
+}
+
+.text-color{
+    color:#009688; 
 }
 
 @media screen and (min-width: 680px){
@@ -891,4 +927,22 @@ mask{
 .github-link{
     position: absolute;
     left: 45px;
+    padding:0px;
+}
+
+
+.icons-img{
+    width:100px;
+    border-radius: 20%;
+}
+
+.icons-img:hover{
+    transform:scaleX(1.07);
+    transition: 1s ease-in-out;
+    cursor:pointer;
+
+}
+
+.git-icon{
+    padding-left:15px;
 }

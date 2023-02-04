@@ -43,6 +43,10 @@ const change_darkmode=()=>{
   r.style.setProperty('--dark-text-color', val2);
   r.style.setProperty('--input-text-color-dark','#565151');
   r.style.setProperty('--input-color-dark','#dad6de');
+  r.style.setProperty('--project-content-light','#e2e1e4')
+  r.style.setProperty('--description','#3e0c64')
+  r.style.setProperty('--icon-color','#3e0c64')
+
   
   light_btn.classList.remove('hide')
   light_btn1.classList.remove('hide')
@@ -62,7 +66,9 @@ const change_lightmode=()=>{
   r.style.setProperty('--dark-text-color', '#fefefe');
   r.style.setProperty('--input-text-color-dark','aliceblue')
   r.style.setProperty('--input-color-dark','#3e0c64')
- 
+  r.style.setProperty('--project-content-light','#3e0c64')
+  r.style.setProperty('--description','#eeeeee')
+  r.style.setProperty('--icon-color','#eeeeee')
   dark_btn.classList.remove('hide')
   dark_btn1.classList.remove('hide')
 }

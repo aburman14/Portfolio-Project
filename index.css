@@ -10,6 +10,7 @@
     font-family: 'poppins';
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-color: #0e0d1e;
 }
 :root{
     --dark-mode-primary: #0e0d1e;
@@ -64,6 +65,7 @@ p{
         /* background-color: red; */
         width:100vw;
         height:auto;
+        background:var(--dark-mode-primary)
     }
 }
 .header-container{
@@ -573,12 +575,17 @@ display: flex;
     text-align: center;
     font-size: 31px;
     text-decoration: none;
+    background: inherit;
 
 }
 
 .content{
     /* padding-left: 154px; */
     width:100%;
+}
+
+.content > *{
+    background-color:#110d2f;
 }
 
 /* .project-name,a{
@@ -936,6 +943,15 @@ height: 122px;
     padding-bottom: 20px;
 }
 
+.form-details > *{
+    background-color: #110d2f ;
+
+}
+.form1-dtls > *{
+    background-color: #110d2f ;
+
+}
+
 .form-details{
     display: flex;
     flex-direction: column;
@@ -951,6 +967,7 @@ height: 122px;
     height: 30px;
     /* fill:#A143EA; */
     fill:#43b3ea;
+    background-color: #110d2f;
 }
 
 
@@ -959,6 +976,9 @@ height: 122px;
     height:150px;
 }
 
+.footer > *{
+    background-color:rgb(47 47 154);
+}
 
 
 .form2{
@@ -1053,6 +1073,7 @@ mask{
 .icons-img{
     width:100px;
     border-radius: 20%;
+    background-color: inherit;
 }
 
 .icons-img:hover{

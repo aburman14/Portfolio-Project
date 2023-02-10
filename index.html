@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 <body>
     <div class="fixed-header">
@@ -63,7 +65,7 @@
 </div>
 
     
-    <section class="container" id="homes">
+    <section class="container"  id="homes">
         <div class="section">
             <div class="social-icons">
                 <a href="https://www.google.com/">
@@ -78,7 +80,10 @@
                 </svg></span>
                 </ul>
             </div>
-            <div class="profile-pic-container">
+            <!-- <div >
+                <img src="/images/blobanimation.svg"/>
+            </div> -->
+            <div class="profile-pic-container" data-aos="fade-right" data-aos-duration="3000">
             <div class="profile-pic">
                 <!-- <img src="/images/skills.jpg" class="img1" /> -->                
                 <svg class="blob" viewBox="0 0 200 186" xmlns="http://www.w3.org/2000/svg">
@@ -95,25 +100,25 @@
                 </svg>
             </div>
             </div>
-            <div class="text-content">
-                <h1 class="text-color">Hello,I'am <span class="text-col">Ankita</span></h1>
+            <div class="text-content" data-aos="fade-right">
+                <h1 class="text-color">Hello,I'am Ankita</h1>
                 <p>Frontend Developer</p>
                 <button class="btn">Contact Me</button>
             </div>
         </div>
     </section>
-    <section class="container" id="abouts">
-        <div class="text-content">
+    <section class="container" id="abouts" data-aos="fade-up">
+        <div class="text-content" data-aos="fade-up"   data-aos-duration="5000">
             <h2 class="text-color">About Me</h2>
             <p class="tex-content-intro">Introduction</p>
         </div>
-        <div class="section-about">
+        <div class="section-about" >
 
-            <div class="pic2">
+            <div class="pic2" data-aos="fade-right" data-aos-duration="7000" data-aos-easing="linear">
                 <img src="/images/hello.gif" class="img2" />
             </div>
             
-            <div class="about-me">
+            <div class="about-me" data-aos="fade-left" data-aos-duration="8000" data-aos-easing="linear">
                 <p>I am aspiring Frontend Enthuaist having experience in Javascript,React ,Typescript.I have relevant experience with RDBMS & databases in ORACLE, SQL Server. I am looking for Collaboration in the Open Source Community  </p>
                 <div class="about-me-icons">
                     <div>
@@ -146,13 +151,14 @@
         </div>
     </section>
 
-    <section class="container" id="skillss">
+    <section class="container" id="skillss" data-aos="fade-up">
     <div class="text-content">
         <h2 class="text-color">Skills</h2>
         <p class="tex-content-intro">My Skills</p>
     </div>
     <div class="section-skill">
-        <div class="skill-display">
+        <div class="skill-display" data-aos="flip-right" 
+        data-aos-duration="2000">
         <!-- <div class="skills">
             <div class="skill-detail">
                 <p class="text2">HTML</p> <p class="percentage">80%</p>
@@ -174,8 +180,8 @@
         </div>
         </div> -->
     
-    <div class="img-container"><img src="/icons/html.png"  class="icons-img"/></div>
-    <div class="img-container"><img src="/icons//react.png"  class="icons-img"/></div>
+    <div class="img-container" ><img src="/icons/html.png"  class="icons-img"/></div>
+    <div class="img-container" ><img src="/icons//react.png"  class="icons-img"/></div>
     <div class="img-container"><img src="/icons/js.png"  class="icons-img"/></div>
     <div class="img-container"><img src="/icons/typescript.png"  class="icons-img"/></div>
     <div class="img-container"><img src="/icons/bootstrap.png"  class="icons-img"/></div>
@@ -188,14 +194,14 @@
         </div> -->
         </div>
     </section>
-    <section class="container" id="projectss">
+    <section class="container" id="projectss" data-aos="fade-up">
         <div class="text-content">
             <h2 class='text-color'>Projects</h2>
         <p class="tex-content-intro">My Projects</p>
         </div>
         
         <div class="projects">
-            <div class="project">
+            <div class="project" data-aos="fade-up" data-aos-duration="5000">
                 <div class="project-content">
                 <img src="/images/ecomm.png" class="project-img">
                 <div class="content">
@@ -207,7 +213,7 @@
             </div>
             </div>
             <div class="project">
-                <div class="project-content">                    
+                <div class="project-content" data-aos="fade-up" data-aos-duration="7000">                    
                 <img src="/images/tic-tac-toe-1.jpg" class="project-img">
                 <div class="content">
                 <h4 class="project-name"><a href="#">Tic Tac Toe</a></h4>
@@ -220,7 +226,7 @@
             </div>
             </div>
             <div class="project">
-                <div class="project-content">
+                <div class="project-content" data-aos="fade-up" data-aos-duration="9000">
                 <img src="/images/gsmarena_000.jpg" class="project-img">
                 <div class="content">
                 <h4 class="project-name"><a href="#">Weather App</a></h4>
@@ -288,7 +294,10 @@
         
             
     </section>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="index.js"></script>
 </body>
 
